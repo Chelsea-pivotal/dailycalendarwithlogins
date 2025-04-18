@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Morandi Color Palette */
+  --morandi-sand: #e6dfd9;
+  --morandi-fog: #d1c9c0;
+  --morandi-stone: #a69f98;
+  --morandi-clay: #b6a59e;
+  --morandi-moss: #7c8c7d;
+  --morandi-sage: #b8c5b9;
+  --morandi-blush: #e4c7c1;
+  --morandi-terracotta: #c8a99b;
+  --morandi-sky: #a4b7c9;
+  --morandi-lavender: #c9c2d0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--morandi-sand);
+  color: #333;
+}
+
+.bg-morandi-sand { background-color: var(--morandi-sand); }
+.bg-morandi-fog { background-color: var(--morandi-fog); }
+.bg-morandi-stone { background-color: var(--morandi-stone); }
+.bg-morandi-clay { background-color: var(--morandi-clay); }
+.bg-morandi-moss { background-color: var(--morandi-moss); }
+.bg-morandi-sage { background-color: var(--morandi-sage); }
+.bg-morandi-blush { background-color: var(--morandi-blush); }
+.bg-morandi-terracotta { background-color: var(--morandi-terracotta); }
+.bg-morandi-sky { background-color: var(--morandi-sky); }
+.bg-morandi-lavender { background-color: var(--morandi-lavender); }
+
+.text-morandi-stone { color: var(--morandi-stone); }
+.text-morandi-moss { color: var(--morandi-moss); }
+.border-morandi-fog { border-color: var(--morandi-fog); }
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
